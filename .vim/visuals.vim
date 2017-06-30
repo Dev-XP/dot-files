@@ -8,6 +8,9 @@ highlight CursorLine cterm=UNDERLINE ctermbg=234
 " A dark grey for highlighting; rgb=38,38,38
 highlight Visual cterm=NONE ctermbg=235 ctermfg=NONE guibg=Grey15
 
+" Show uncomplete commands in the bottom right
+set showcmd
+
 " Set indentation level
 set tabstop=4
 set shiftwidth=4
