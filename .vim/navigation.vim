@@ -1,3 +1,6 @@
+" Ignores the casing when searching
+set smartcase
+
 " Easier Split Navigation
 nnoremap <C-J> <C-W><C-J>  " Down
 nnoremap <C-K> <C-W><C-K>  " Up
