@@ -13,7 +13,9 @@ set tw=80
 set nowrap
 
 " Set relative numbering for better navigation
+" with the current line number
 set relativenumber
+set number
 
 " Toggle NERDTree
 nmap <LEADER>n :NERDTreeToggle<CR>
