@@ -19,6 +19,9 @@ call dein#add("svermeulen/vim-easyclip")
 " Dependency:
 call dein#add("tpope/vim-repeat")
 
+" Useful pair-like features that utilize square brackets []
+call dein#add('tpope/vim-unimpaired')
+
 " --------------------------------------------------
 
 
