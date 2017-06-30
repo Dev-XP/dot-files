@@ -36,6 +36,13 @@ call dein#add("tpope/vim-surround")
 " File explorer shelf for Vim
 call dein#add('scrooloose/nerdtree')
 
+" Shows a git diff in the gutter (sign column), allows staging/reverting/navigating of hunks
+call dein#add('airblade/vim-gitgutter')
+
+" Statusline with Powerline font
+call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
+
 " --------------------------------------------------
 
 

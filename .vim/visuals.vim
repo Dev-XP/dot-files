@@ -6,3 +6,10 @@ set relativenumber
 
 " Toggle NERDTree
 nmap <LEADER>n :NERDTreeToggle<CR>
+
+" Airline Status Line settings
+let g:airline_theme='dark'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
