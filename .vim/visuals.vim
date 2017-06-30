@@ -17,6 +17,9 @@ set nowrap
 set relativenumber
 set number
 
+" Incrementally highlights the results of a search
+set incsearch
+
 " Toggle NERDTree
 nmap <LEADER>n :NERDTreeToggle<CR>
 
