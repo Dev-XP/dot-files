@@ -9,6 +9,9 @@ set expandtab
 " Set line width
 set tw=80
 
+" Don't wrap long lines (soft wrap)
+set nowrap
+
 " Set relative numbering for better navigation
 set relativenumber
 
