@@ -1,6 +1,11 @@
 " Enables syntax highlighting
 syntax enable
 
+" Set indentation level
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " Set relative numbering for better navigation
 set relativenumber
 
