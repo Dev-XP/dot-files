@@ -6,6 +6,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Set line width
+set tw=80
+
 " Set relative numbering for better navigation
 set relativenumber
 
