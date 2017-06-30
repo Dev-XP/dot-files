@@ -1,2 +1,5 @@
 " All loaded vim bundles through dein
 source $HOME/.vim/bundles.vim
+
+" Typing related settings
+source $HOME/.vim/typing.vim
