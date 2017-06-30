@@ -22,6 +22,9 @@ call dein#add("tpope/vim-repeat")
 " Useful pair-like features that utilize square brackets []
 call dein#add('tpope/vim-unimpaired')
 
+" Add surround action to Vim functionality
+call dein#add("tpope/vim-surround")
+
 " --------------------------------------------------
 
 
