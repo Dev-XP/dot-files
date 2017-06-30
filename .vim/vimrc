@@ -2,7 +2,10 @@
 source $HOME/.vim/bundles.vim
 
 " Visual related settings
-source $HOME/.vim/visuals.vim
+source $HOME/.vim/general.vim
 
 " Typing related settings
 source $HOME/.vim/typing.vim
+
+" Visual related settings
+source $HOME/.vim/visuals.vim
