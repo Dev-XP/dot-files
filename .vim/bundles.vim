@@ -28,7 +28,6 @@ call dein#add('tpope/vim-unimpaired')
 " Add surround action to Vim functionality
 call dein#add("tpope/vim-surround")
 
-
 " --------------------------------------------------
 " Visuals
 " --------------------------------------------------
@@ -42,6 +41,13 @@ call dein#add('airblade/vim-gitgutter')
 " Statusline with Powerline font
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
+
+" --------------------------------------------------
+" Typing
+" --------------------------------------------------
+
+" Adds the ability to word jump by CamelCasing
+call dein#add('bkad/CamelCaseMotion')
 
 " --------------------------------------------------
 
