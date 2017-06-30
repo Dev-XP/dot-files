@@ -14,6 +14,9 @@ call dein#add('Shougo/dein.vim')
 " General
 " --------------------------------------------------
 
+" Enables Git features directly in Vim
+call dein#add("tpope/vim-fugitive")
+
 " Simplified clipboard management
 call dein#add("svermeulen/vim-easyclip")
 " Dependency:
@@ -25,7 +28,16 @@ call dein#add('tpope/vim-unimpaired')
 " Add surround action to Vim functionality
 call dein#add("tpope/vim-surround")
 
+
 " --------------------------------------------------
+" Visuals
+" --------------------------------------------------
+
+" File explorer shelf for Vim
+call dein#add('scrooloose/nerdtree')
+
+" --------------------------------------------------
+
 
 
 " Required:
