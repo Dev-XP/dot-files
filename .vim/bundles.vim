@@ -14,8 +14,10 @@ call dein#add('Shougo/dein.vim')
 " General
 " --------------------------------------------------
 
-" Enables Git features directly in Vim
-"call dein#add("tpope/vim-fugitive")
+" Simplified clipboard management
+call dein#add("svermeulen/vim-easyclip")
+" Dependency:
+call dein#add("tpope/vim-repeat")
 
 " --------------------------------------------------
 
