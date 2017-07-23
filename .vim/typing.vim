@@ -29,3 +29,5 @@ xmap <silent> iw <Plug>CamelCaseMotion_ie
 omap <silent> w <Plug>CamelCaseMotion_w
 omap <silent> b <Plug>CamelCaseMotion_b
 omap <silent> e <Plug>CamelCaseMotion_e[20~
+
+let g:syntastic_javascript_checkers = ['eslint']

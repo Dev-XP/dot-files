@@ -9,3 +9,6 @@ source $HOME/.vim/typing.vim
 
 " Visual related settings
 source $HOME/.vim/visuals.vim
+
+" Visual related settings
+source $HOME/.vim/navigation.vim

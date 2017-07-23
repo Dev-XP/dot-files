@@ -49,6 +49,9 @@ call dein#add('vim-airline/vim-airline-themes')
 " Adds the ability to word jump by CamelCasing
 call dein#add('bkad/CamelCaseMotion')
 
+" Useful pair-like features that utilize square brackets []
+call dein#add('scrooloose/syntastic')
+
 " --------------------------------------------------
 
 
