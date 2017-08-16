@@ -52,6 +52,9 @@ call dein#add('bkad/CamelCaseMotion')
 " Useful pair-like features that utilize square brackets []
 call dein#add('scrooloose/syntastic')
 
+" Add Sublime Multi-cursor support for Vim
+call dein#add('terryma/vim-multiple-cursors')
+
 " --------------------------------------------------
 
 
