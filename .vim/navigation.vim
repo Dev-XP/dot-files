@@ -10,3 +10,7 @@ nnoremap <C-H> <C-W><C-H>  " Left
 " Handle bufferes - Next, Previous
 nnoremap gt :bn<CR>
 nnoremap gT :bp<CR>
+
+" Move up a line even through word wrap
+nnoremap j gj
+nnoremap k gk
