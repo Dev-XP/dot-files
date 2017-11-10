@@ -31,3 +31,11 @@ omap <silent> b <Plug>CamelCaseMotion_b
 omap <silent> e <Plug>CamelCaseMotion_e[20~
 
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Trim trailing whitespace
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+noremap <Leader>w :call TrimWhitespace()<CR>
