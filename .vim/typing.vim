@@ -31,6 +31,7 @@ omap <silent> b <Plug>CamelCaseMotion_b
 omap <silent> e <Plug>CamelCaseMotion_e[20~
 
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_quiet_messages = { "!level":  "errors" }
 
 " Trim trailing whitespace
 fun! TrimWhitespace()
