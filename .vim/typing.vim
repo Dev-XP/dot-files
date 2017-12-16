@@ -40,3 +40,6 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 noremap <Leader>w :call TrimWhitespace()<CR>
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md PrettierAsync

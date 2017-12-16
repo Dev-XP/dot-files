@@ -55,6 +55,9 @@ call dein#add('scrooloose/syntastic')
 " Add Sublime Multi-cursor support for Vim
 call dein#add('terryma/vim-multiple-cursors')
 
+" Adds JS Prettier support
+call dein#add('prettier/vim-prettier')
+
 " --------------------------------------------------
 
 
