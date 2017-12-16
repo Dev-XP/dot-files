@@ -5,6 +5,16 @@ inoremap Jk <ESC>
 inoremap JK <ESC>
 vnoremap JK <ESC>
 
+" Indent file without moving cursor
+nnoremap g= gg=G``
+
+" Better visual indentations
+vnoremap > >gv
+vnoremap < <gv
+
+" Select most recently pasted text
+nnoremap gp `[v`]
+
 " Sets the leader character to `;`
 let mapleader = ";"
 
