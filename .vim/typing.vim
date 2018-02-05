@@ -41,7 +41,8 @@ omap <silent> b <Plug>CamelCaseMotion_b
 omap <silent> e <Plug>CamelCaseMotion_e[20~
 
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_quiet_messages = { "!level":  "errors" }
+let g:syntastic_javascript_eslint_args = '--config dx/eslint.config.js'
+let g:syntastic_quiet_messages = { "!level":  "error" }
 
 " Trim trailing whitespace
 fun! TrimWhitespace()
@@ -52,4 +53,27 @@ endfun
 noremap <Leader>w :call TrimWhitespace()<CR>
 
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.vue PrettierAsync
+let g:prettier#exec_cmd_async = 1
+let g:prettier#config#print_width = 80
+let g:prettier#config#tab_width = 4
+let g:prettier#config#use_tabs = 'false'
+let g:prettier#config#semi = 'true'
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#bracket_spacing = 'true'
+let g:prettier#config#trailing_comma = 'all'
+
+nnoremap <leader>c :call CopyToggle()<cr>
+
+let g:copy_mode = 0
+function! CopyToggle()
+    if g:copy_mode
+        setlocal number
+        setlocal relativenumber
+        let g:copy_mode = 0
+    else
+        setlocal nonumber
+        setlocal norelativenumber
+        let g:copy_mode = 1
+    endif
+endfunction
