@@ -1,5 +1,5 @@
 " Sets a unified shared clipboard between yank and the OS
-set clipboard=unnamed
+set clipboard=unnamed,unnamedplus
 
 " Refresh source with F5
 nnoremap <F5> :source $MYVIMRC<CR>:e<CR>

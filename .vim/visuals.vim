@@ -48,3 +48,19 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+
+au FileType qf call AdjustWindowHeight(1, 10)
+au FileType qf set wrap
+function! AdjustWindowHeight(minheight, maxheight)
+    let l = 1
+    let n_lines = 0
+    let w_width = winwidth(0)
+    while l <= line('$')
+        " number to float for division
+        let l_len = strlen(getline(l)) + 0.0
+        let line_width = l_len/w_width
+        let n_lines += float2nr(ceil(line_width))
+        let l += 1
+    endw
+    exe max([min([n_lines, a:maxheight]), a:minheight]) . "wincmd _"
+endfunction

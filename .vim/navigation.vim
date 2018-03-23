@@ -14,3 +14,9 @@ nnoremap gT :bp<CR>
 " Move up a line even through word wrap
 nnoremap j gj
 nnoremap k gk
+
+" Fuzzy File finding settings
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+nnoremap <LEADER>f :NERDTreeFind<CR>

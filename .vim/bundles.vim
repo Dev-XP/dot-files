@@ -28,6 +28,9 @@ call dein#add('tpope/vim-unimpaired')
 " Add surround action to Vim functionality
 call dein#add("tpope/vim-surround")
 
+" Add fuzzy file finding
+call dein#add("ctrlpvim/ctrlp.vim")
+
 " --------------------------------------------------
 " Visuals
 " --------------------------------------------------
@@ -41,6 +44,9 @@ call dein#add('airblade/vim-gitgutter')
 " Statusline with Powerline font
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
+
+" Syntax highlighting for .vue files
+call dein#add('posva/vim-vue')
 
 " --------------------------------------------------
 " Typing
@@ -57,6 +63,14 @@ call dein#add('terryma/vim-multiple-cursors')
 
 " Adds JS Prettier support
 call dein#add('prettier/vim-prettier')
+
+" Adds zen coding
+call dein#add('mattn/emmet-vim')
+
+" Adds snippets and autocomplete
+call dein#add('Shougo/neocomplcache')
+call dein#add('Shougo/neosnippet')
+
 
 " --------------------------------------------------
 
